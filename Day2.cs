@@ -16,7 +16,7 @@ namespace AdventOfCode2020
             var rg = new Regex(pattern);
 
             var ok = 0;
-            foreach(var s in StringData)
+            foreach(var s in Data)
             {
                 var m = rg.Matches(s)[0];
                 var count = m.Groups["password"].Value.Count(f => f == Convert.ToChar(m.Groups["car"].Value));
@@ -34,7 +34,7 @@ namespace AdventOfCode2020
             var rg = new Regex(pattern);
 
             var ok = 0;
-            foreach(var s in StringData)
+            foreach(var s in Data)
             {
                 var m = rg.Matches(s)[0];
 

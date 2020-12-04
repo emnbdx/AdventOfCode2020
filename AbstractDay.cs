@@ -24,7 +24,6 @@ namespace AdventOfCode2020
 
         public long[] IntCodeData { get { return Data.First().Split(',').Select(long.Parse).ToArray(); } }
         public List<int> IntData { get { return Data.Select(int.Parse).ToList(); } }
-        public List<string> StringData { get { return Data; } }
         public abstract string Part1();
         public abstract string Part2();
     }
