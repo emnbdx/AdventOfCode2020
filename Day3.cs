@@ -37,8 +37,7 @@ namespace AdventOfCode2020
                 if(Data[i][currentX % Data[i].Length] == '#')
                     tree++;
             }
-            Console.WriteLine(tree.ToString());
-
+            
             return tree;
         }
     }
